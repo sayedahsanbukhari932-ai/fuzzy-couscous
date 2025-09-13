@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400px;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav img {
+    height: 80px;
+    width: auto;
+    margin-right: 60px;
+}
+
+
+.nav {
+    height: 110px;
+    width: 100%;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.nav-part-1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-part-1 ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-part-1 ul li {
+    margin-right: 40px;
+    font-size: 21px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.nav-part-2 i {
+    font-size: 21px;
+    font-weight: 500;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.content-left {
+    height: 100%;
+    width: 40%;
+    padding: 80px 100px; 
+}
+
+.content-left h5 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.content-left h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.content-left p {
+    font-size: 20px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: black ;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 40px;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    cursor: pointer;
+    transition: ease-out 3s; 
+    
+}
+.btn:hover{
+    background-color: aqua;
+    transform: rotate(360deg);
+}
+
+.content-right {
+    height: 100%;
+    width: 60%;
+    padding: 110px 100px;
+    white-space: nowrap;
+    overflow-x: auto;  
+}
+
+.content-right::-webkit-scrollbar {
+    display: none;
+}
+
+.product {
+    height: 370px;
+    width: 250px;
+    position: relative;
+    box-shadow: 9px 9px 5px ;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.product img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    bottom: 15%;
+    position: absolute;
+}
+
+.product h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 20%;
+    font-size: large;
+}
+
+.catagory {
+    font-weight: 500;
+    position: absolute;
+    bottom: 15%;
+    font-size: large;
+}
+
+.color {
+    font-weight: 500;
+    position: absolute;
+    bottom: 10%;
+}
+
+.price {
+    font-weight: 500;
+    position: absolute;
+    bottom: 5%;
+    font-size: large;
+}
